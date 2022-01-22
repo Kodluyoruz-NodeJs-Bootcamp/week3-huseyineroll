@@ -1,0 +1,17 @@
+<%- include('partials/header'); -%>
+
+<ul class="recipes">
+  <li class="recipe">
+    <ul>
+      <% for(var i = 0; i < allUser.length; i++) {  %>
+        <li>
+          <h4><%= allUser[i].email %></h4>
+        </li>
+      <% } %>
+    </ul>
+  </li>
+
+
+</ul>
+
+<%- include('partials/footer'); -%>
